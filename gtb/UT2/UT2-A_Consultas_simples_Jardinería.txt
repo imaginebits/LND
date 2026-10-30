@@ -1,0 +1,38 @@
+1. Sacar el código de oficina y la ciudad donde hay oficinas.
+    SELECT CodigoOficina,Ciudad FROM Oficinas;
+
+2. Sacar cuántos empleados hay en la compañía.
+    SELECT COUNT(*) AS Num_Empleados from Empleados;
+
+3. Sacar cuántos clientes tiene cada país.
+    SELECT Pais, COUNT(*) AS Num_Clientes from Clientes GROUP BY Pais;
+
+4. Sacar cual fue el pago medio en 2005 (pista: Usar la función YEAR de mysql)
+    SELECT AVG(Cantidad) AS Pago_Medio FROM Pagos WHERE YEAR(FechaPago)='2006';
+
+5. Sacar cuántos pedidos están en cada estado ordenado descendentemente por el
+número de pedidos.
+    SELECT Estado, COUNT(*) AS Num_Pedido FROM Pedidos GROUP BY Estado ORDER BY Num_Pedido;
+
+6. Sacar el precio del producto más caro y del más barato
+    
+
+7. Sacar la ciudad y el teléfono de las oficinas de Estados Unidos
+    SELECT Ciudad,Telefono FROM Oficinas WHERE Pais='EEUU';
+
+8. Sacar el nombre, los apellidos y el email de los empleados a cargo de Alberto Soria.
+    
+
+9. Sacar el cargo, nombre, apellidos y email del jefe de la empresa.
+10. Sacar el nombre, apellidos y cargo de aquellos que no sean representantes de
+ventas.
+11. Sacar el número de clientes que tiene la empresa.
+12. Sacar el nombre de los clientes españoles.
+13. Sacar cuántos clientes tiene cada país.
+14. Sacar cuántos clientes tiene la ciudad de Madrid.
+15. Sacar cuántos clientes tienen las ciudades que empiezan por M.
+16. Sacar el código de empleado y el número de clientes al que atiende cada
+representante de ventas.
+17. Sacar el número de clientes que no tiene asignado representante de ventas.
+18. Sacar cuál fue el primer y último pago que hizo algún cliente.
+19. Sacar el código de cliente de aquellos clientes que hicieron pagos en 2008.
