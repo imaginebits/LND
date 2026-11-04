@@ -15,13 +15,13 @@ número de pedidos.
     SELECT Estado, COUNT(*) AS Num_Pedido FROM Pedidos GROUP BY Estado ORDER BY Num_Pedido;
 
 6. Sacar el precio del producto más caro y del más barato
-    
+    SELECT MAX(PrecioUnidad), MIN(PrecioUnidad) from DetallePedidos;
 
 7. Sacar la ciudad y el teléfono de las oficinas de Estados Unidos
     SELECT Ciudad,Telefono FROM Oficinas WHERE Pais='EEUU';
 
 8. Sacar el nombre, los apellidos y el email de los empleados a cargo de Alberto Soria.
-    
+    SELECT 
 
 9. Sacar el cargo, nombre, apellidos y email del jefe de la empresa.
 10. Sacar el nombre, apellidos y cargo de aquellos que no sean representantes de
