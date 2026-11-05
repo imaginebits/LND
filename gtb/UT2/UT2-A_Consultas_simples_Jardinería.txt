@@ -21,9 +21,11 @@ número de pedidos.
     SELECT Ciudad,Telefono FROM Oficinas WHERE Pais='EEUU';
 
 8. Sacar el nombre, los apellidos y el email de los empleados a cargo de Alberto Soria.
-    SELECT 
+    SELECT nombre,apellido1,Apellido2,Email FROM Empleados WHERE CodigoJefe='2';
 
 9. Sacar el cargo, nombre, apellidos y email del jefe de la empresa.
+    S
+
 10. Sacar el nombre, apellidos y cargo de aquellos que no sean representantes de
 ventas.
 11. Sacar el número de clientes que tiene la empresa.

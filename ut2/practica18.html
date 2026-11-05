@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Creemos un mapa de imágenes sencillo con una imagen de los
+municipios de Tenerife. Usando MapEdit genera áreas sensibles en los
+municipios de La Laguna, Santa Cruz y Tegueste que nos lleven a páginas con
+información de la población de éstos. Los datos de población los puedes
+conseguir en el Instituto de Estadística de Canarias:
+www.gobiernodecanarias.org/istac-->
+</body>
+   <!-- El atributo usemap debe llevar una almohadilla (#) delante y coincidir con el name del mapa -->
+<img src="/lnd/Imagenes/mapedit-export.geojson" alt="Mapa de municipios de Tenerife" usemap="#mapa-tenerife">
+
+<map name="mapa-tenerife">
+    <!-- SAN CRISTOBAL DE LA LAGUNA -->
+    <area shape="poly" 
+    coords="100,120,110,140,90,150" 
+    alt="La Laguna" 
+    title="La Laguna" 
+    href="https://www3.gobiernodecanarias.org/istac/statistical-visualizer/visualizer/data.html?permalink=8t6k91xbveltwkx1kfaisbfum">
+    <!-- SANTA CRUZ DE TENERIFE -->
+    <area shape="poly" 
+    coords="118,0,184,28,150,50" 
+    alt="Santa Cruz" 
+    title="Santa Cruz" 
+    href="https://www3.gobiernodecanarias.org/istac/statistical-visualizer/visualizer/data.html?permalink=2zs00sse2ebqyjgo1azraqeu">
+    <!-- TEGUESTE -->
+    <area shape="poly" 
+    coords="184,200,160,210,170,230" 
+    alt="Tegueste" 
+    title="Tegueste" 
+    href="https://www3.gobiernodecanarias.org/istac/statistical-visualizer/visualizer/data.html?permalink=1c78sj81c6aedd114w2kltio1wdi">
+</map>
+
+    </MAP>
+</html>
