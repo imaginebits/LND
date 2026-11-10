@@ -24,12 +24,18 @@ número de pedidos.
     SELECT nombre,apellido1,Apellido2,Email FROM Empleados WHERE CodigoJefe='2';
 
 9. Sacar el cargo, nombre, apellidos y email del jefe de la empresa.
-    S
+     SELECT puesto,nombre,apellido1,Apellido2,Email FROM Empleados WHERE Codigojefe IS NULL;
 
 10. Sacar el nombre, apellidos y cargo de aquellos que no sean representantes de
 ventas.
+    SELECT nombre,Apellido1,Apellido2,Puesto FROM Empleados WHERE Puesto NOT LIKE 'Representantes Ventas';
+
 11. Sacar el número de clientes que tiene la empresa.
+    SELECT COUNT(*) AS Total_Clientes from Clientes;
+
 12. Sacar el nombre de los clientes españoles.
+
+
 13. Sacar cuántos clientes tiene cada país.
 14. Sacar cuántos clientes tiene la ciudad de Madrid.
 15. Sacar cuántos clientes tienen las ciudades que empiezan por M.
