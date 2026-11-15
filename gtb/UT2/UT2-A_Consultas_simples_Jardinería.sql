@@ -24,7 +24,7 @@ número de pedidos.
     SELECT nombre,apellido1,Apellido2,Email FROM Empleados WHERE CodigoJefe='2';
 
 9. Sacar el cargo, nombre, apellidos y email del jefe de la empresa.
-     SELECT puesto,nombre,apellido1,Apellido2,Email FROM Empleados WHERE Codigojefe IS NULL;
+    SELECT puesto,nombre,apellido1,Apellido2,Email FROM Empleados WHERE Codigojefe IS NULL;
 
 10. Sacar el nombre, apellidos y cargo de aquellos que no sean representantes de
 ventas.
