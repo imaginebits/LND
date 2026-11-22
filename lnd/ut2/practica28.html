@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PRACTICA 28</title>
 </head>
 <body>
-    <table border="2px" style="background-color: rgb(239, 239, 239);">
-        <tr>
-            <td><b>INTERESES</b>
-                <Form>
-                    <br>
-                    <!--Cammpo oculto-->
-                    <INPUT TYPE="hidden" name=”nombre” checked>
-                    <!--Cammpo para rellenar-->
-                    CONTRASEÑA DEL PERFIL:
-                    <INPUT TYPE="password" name=”nombre” checked><br>
-                    CURSO:
-                    <INPUT TYPE="text" name="nombre" value="Intruduzca su curso actual" size="39" 
-                    maxlength="20"><br>
-                    <!--Selección de intereses-->
-                    INTERESES: <br>
-                    <INPUT TYPE="checkbox" name="hola" checked>Informática
-                    <INPUT TYPE="checkbox" name="hola" checked>Deportes
-                    <INPUT TYPE="checkbox" name="hola" checked>Salud    
-                    <br>
-                    <INPUT TYPE="checkbox" name="hola" checked>Politica
-                    <INPUT TYPE="checkbox" name="hola" checked>Música
-                    <INPUT TYPE="checkbox" name="hola" checked>Literatura
+<FORM>
+    <TABLE style="background-color: rgb(239, 239, 239);" cellpadding="8">
+        <TR>
+            <TD>
+                <B>INTERESES:</B>
+                <HR>
 
-                    <hr>
-                    <INPUT TYPE="submit" value="ACEPTAR"> 
-            <INPUT TYPE="reset" value="RESET">
-                </Form>
-            </td>
-        </tr>
+                <!-- 1era fila oculta  -->
+                <INPUT type="hidden" name="IES" value="Pérez Minik">
 
-    </table>
+                <!-- 2da fila de campos contraseña y texto  -->
+                CONTRASEÑA DE PERFIL:
+                <INPUT type="password" name="password" size="15"><BR>
+                CURSO:
+                <INPUT type="text" name="curso" size="25" maxlength="30"><BR>
+
+                <!-- 3era fila interereses -->
+                INTERESES:<BR>
+                <INPUT type="checkbox" name="informatica" checked>Informática
+                <INPUT type="checkbox" name="deportes">Deportes
+                <INPUT type="checkbox" name="salud" checked>Salud
+                <BR>
+                <INPUT type="checkbox" name="politica">Política
+                <INPUT type="checkbox" name="musica">Música
+                <INPUT type="checkbox" name="literatura">literatura
+                <!--4ra fila color -->
+                <HR>
+                <INPUT type="submit" value="Aceptar">
+                <INPUT type="reset" value="Borrar">
+            </TD>
+        </TR>
+    </TABLE>
+</FORM>
+
 </body>
 </html>

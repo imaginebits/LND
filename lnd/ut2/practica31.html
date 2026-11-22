@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 31</title>
+</head>
+<body>
+<form action="">
+    <table style="background-color: rgb(226, 226, 226);" cellpadding="5" >
+        <!--Primera fila titulo intereses-->
+        <tr>
+            <td colspan="2">
+                <b>INTERESES:</b>
+            </td>
+        </tr>
+        <!--Segunda fila formulario colores-->
+        <tr>
+            <td colspan="2">
+
+                    COLOR DE FONDO FAVARITO:
+                    <select name="color">
+                        <optgroup>
+                            <option value=”FF0000” selected>Rojo
+                            <option value="00FF00">Verde
+                            <option value="000000">Negro
+                            <option value="0000FF">Azul
+                            <option value="FFFFFF">Blanco
+                        </optgroup>
+                    </select>
+                <hr>
+            </td>
+        </tr>
+        <!--3ra fila dividad en dos columnas-->
+        <tr>
+            <!--formulario intereses-->
+            <td valign="bottom">
+                <font>INTRESES:</font>
+                <select name="Intereses" size="4" multiple>
+                        <option value="Mascotas">Mascotas</option>
+                        <option value="Informática">Informática</option>
+                        <option value="Literatura">Literatura</option>
+                        <option value="Salud">Salud</option>
+                        <option value="Cotilleos">Cotilleos</option>
+                        <option value="Noticias">Noticias</option>
+                </select>
+            </td>
+            <td valign="bottom">
+                <font>SUCURSALES:</font>
+                <select name="Sucursales" size="6">
+                    <optgroup label="Tenerife">
+                        <option value="Tenerife">Tenerife</option>
+                        <option value="La Laguna">La Laguna</option>
+                        <option value="Arona">Arona</option>
+                    </optgroup>
+                    <optgroup label="El Hierro">
+                        <option value="Valverde">Valverde</option>
+                        <option value="Restinga">Restinga</option>
+                    </optgroup>
+                    <optgroup label="La Gomera">
+                        <option value="Vallehermoso">Vallehermoso</option>
+                        <option value="San Sebastian">San Sebastian</option>
+                    </optgroup>
+                    <optgroup label="La Palma">
+                        <option value="El Paso">El Paso</option>
+                        <option value="Garafia">Garafia</option>
+                        <option value="Mazo">Mazo</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <!--4ta fila formulario de comentarios-->
+        <tr>
+            <td colspan="2">
+                <hr>
+                <font>Introduzca sus comentarios:</font><br>
+                <textarea cols="50%" rows="4" name="Comentarios">sus comentarios aquí...
+                </textarea>
+                <hr>
+            </td>
+        </tr>
+        <!--5ta fila aceptar o cancelar-->
+        <tr>
+            <td colspan="2">
+                <INPUT type="submit" value="Aceptar">
+                <INPUT type="reset" value="Borrar">
+            </td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
