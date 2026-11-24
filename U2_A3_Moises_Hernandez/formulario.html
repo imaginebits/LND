@@ -10,28 +10,132 @@
 
     <header>
         <h2 style="text-align: center;">Moisés Adonis Hernández Perdomo</h2>
+        <center>
+            <img src="" alt="Logo del Club Deportivo" width="150">
+        <br><br>
+        </center>
     </header>
 
     <form action="recorrer.php" method="post">
-        <img src="logo.png" alt="Logo del Club Deportivo" width="150">
-        <br><br>
-
         <b>Formulario de inscripción Club Deportivo</b>
-        <table border="1" width="100%">
-           <!--FORMULARIO DATOS PERSONALES--> 
+        <br><br>
+        <table border="1" width="100%" >
+           <!--FORMULARIO DATOS PERSONALES-->
+           Datos Personales:
             <tr>
                 <!--DNI-->
                 <td>
-                    <input type="text" name="" id="">
+                    DNI:
+                    <input type="text" name="moisesdni" max="9" pattern="[0-9]{8}[A-Za-z]" required><br clear="left">
+                    Nombre:
+                    <input type="text" name="moisesnombre" maxlength="20" required>
+                    <br>
+                    Primer Apellido:
+                    <input type="text" name="moisesapellido1" maxlength="20" required>
+                    <br>
+                    Segundo Apellido:
+                    <input type="text" name="moisesapellido2" maxlength="80">
+                    <br>
+                    Dirección:
+                    <input type="text" name="moisesdireccion" maxlength="80">
+                    <br>
+                    Código Postal:
+                    <input type="text" name="moisescodigopostal" maxlength="5" pattern="[0-9]{5}">
+                    <br>
+                    Población:
+                    <input type="text" name="moisespoblacion" maxlength="64">
+                    <br>
+                    Provincia:
+                    <select name="moisesprovincia">
+                        <option value="Santa Cruz de Tenerife select">Santa Cruz de Tenerife</option>
+                        <option value="Las Palmas">Las Palmas</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Valencia">Valencia</option>
+                    </select>
+                    <br>
+                    Teléfono:
+                    <input type="tel" name="moisestelefono" maxlength="9" pattern="[0-9]">
+                    <br>
+                    Email:
+                    <input type="email" name="moisesemail" maxlength="64">
+                    <br>
+                    Usuario:
+                    <input type="text" name="moisesusuario" maxlength="9">
+                    <br>
+                    Contraseña:
+                    <input type="password" name="moisescntraseña" maxlength="9">
+                    <br>
+                    Fecha de nacimiento:
+                    <input type="date" name="moisesfechanacimiento">
+                    <br>
+                    Sexo:
+                    <select name="moisessexo">
+                        <option value="Mujer">Mujer</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <br>
+                    Foto o DNI escaneado (PDF/JPG):
+                    <input type="file" name="moisesfoto" accept=".pdf, .jpg, .jpeg, application/pdf, image/jpeg">
+                    <br>
                 </td>
             </tr>
-            <tr>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
         </table>
+        <br>
+        <!-- Formulario Deportes y Experiencia-->
+        Deportes y Experiencia
+         <table border="1" width="100%">
+            <tr>
+                <td>
+                    Deporte Favorito:
+                    <select name="moisesdeporte">
+                        <option value="Futbol">Futbol</option>
+                        <option value="Tenis">Tenis</option>
+                        <option value="Natacion">Natación</option>
+                        <option value="Ciclismo">Ciclismo</option>
+                    </select>
+                    <br>
+                    Experiencia previa en clubes:
+                    <input type="radio" name="moisesexperiencia" value="Si">Sí
+                    <input type="radio" name="moisesexperiencia" value="No">No
+                    <br>
+                    Nombre del club anterior:
+                    <input type="text" name="moisesclub" maxlength="32">
+                    <br>
+                    Categoria solicitada:
+                    <select name="moisescategoria" >
+                        <option value="Infantil">Infantil</option>
+                        <option value="Juvenil">Juvenil</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                </td>
+            </tr>
+         </table>
+         <br>
+         <!--Formulario Idiomas y otros datos-->
+         Idiomas y otros datos
+         <table border="1" width="100%">
+            <tr>
+                <td>
+                    Idiomas:
+                    <select name="moisesidiomas" multiple size="4">
+                        <option value="Espanol">Español</option>
+                        <option value="Ingles">Inglés</option>
+                        <option value="Frances">Frances</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                    <br>
+                    Sí marco 'Otros', espefique:
+                    <textarea name="moisesotros" rows="3" cols="40"></textarea>
+                    <br>
+                    Otros datos relevantes:
+                    <textarea name="moisesotrosdatos" rows="3" cols="40"></textarea>
+                </td>
+            </tr>
+         </table>
+         <br>
+         <input type="submit" name="moisesaceptar" value="Enviar Solicitud">
+         <input type="reset" name="moisesaceptar" value="Limpiar formulario">
     </form>
 
 </body>
