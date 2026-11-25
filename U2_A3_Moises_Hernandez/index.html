@@ -8,28 +8,29 @@
 </head>
 <body>
 
-    <header>
+    <header valign="middle">
         <h2 style="text-align: center;">Moisés Adonis Hernández Perdomo</h2>
         <center>
-            <img src="" alt="Logo del Club Deportivo" width="150">
+            <img src="Imagenes/LogoGYM.png" alt="Logo del Club Deportivo" width="150">
         <br><br>
         </center>
     </header>
 
-    <form action="recorrer.php" method="post">
+    <form action="mailto:moises@gmail.com" method="post">
         <b>Formulario de inscripción Club Deportivo</b>
         <br><br>
-        <table border="1" width="100%" >
+        <table border="1" width="100%" cellpadding="10">
            <!--FORMULARIO DATOS PERSONALES-->
            Datos Personales:
             <tr>
                 <!--DNI-->
                 <td>
                     DNI:
-                    <input type="text" name="moisesdni" max="9" pattern="[0-9]{8}[A-Za-z]" required><br clear="left">
+                    <input type="text" name="moisesdni" max="9" pattern="[0-9]{8}[A-Za-z]" required>
+                    <br>
                     Nombre:
                     <input type="text" name="moisesnombre" maxlength="20" required>
-                    <br>
+                    <br>br
                     Primer Apellido:
                     <input type="text" name="moisesapellido1" maxlength="20" required>
                     <br>
@@ -84,7 +85,7 @@
         <br>
         <!-- Formulario Deportes y Experiencia-->
         Deportes y Experiencia
-         <table border="1" width="100%">
+         <table border="1" width="100%" cellpadding="10">
             <tr>
                 <td>
                     Deporte Favorito:
@@ -114,7 +115,7 @@
          <br>
          <!--Formulario Idiomas y otros datos-->
          Idiomas y otros datos
-         <table border="1" width="100%">
+         <table border="1" width="100%" cellpadding="10">
             <tr>
                 <td>
                     Idiomas:
